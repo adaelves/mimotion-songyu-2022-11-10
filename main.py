@@ -231,7 +231,7 @@ def push_wx(desp=""):
     else:
         server_url = f"https://sc.ftqq.com/{sckey}.send"
         params = {
-            "text": print(today)'小米运动步数',
+            "text": 'print(today)小米运动步数',
             "desp": desp
         }
 
