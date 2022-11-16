@@ -28,7 +28,7 @@ K_dict = {"多云": 0.9, "阴": 0.8, "小雨": 0.7, "中雨": 0.5, "大雨": 0.4
 # 北京时间
 time_bj = datetime.datetime.today() + datetime.timedelta(hours=8)
 now = time_bj.strftime("%Y-%m-%d %H:%M:%S")
-today =time_bj.strftime("%Y-%m-%d")
+today = time_bj.strftime("%Y-%m-%d")
 headers = {'User-Agent': 'MiFit/5.3.0 (iPhone; iOS 14.7.1; Scale/3.00)'}
 
 
@@ -202,7 +202,7 @@ def main(_user, _passwd, min_1, max_1):
 
     response = requests.post(url, data=data, headers=head).json()
     # print(response)
-    result = f"⏰[{now}]⏰\n\n\n\n🍔：{user[:3]}****{user[7:]}\n\n\n\n🍟：{step}\n\n\n\n☕：[" + response['message'] + "]\n\n\n\n"
+    result = f"⏰：[{today}]\n\n\n\n🍔：{user[:3]}****{user[7:]}\n\n\n\n🍟：{step}\n\n\n\n☕：[" + response['message'] + "]\n\n\n\n\n\n\n\n-----------------------"
     # print(result)
     return result
 
