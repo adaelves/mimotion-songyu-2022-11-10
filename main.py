@@ -6,7 +6,6 @@ import random
 import re
 import sys
 import time
-
 import requests
 
 # 推送server酱
@@ -16,6 +15,8 @@ sckey = sys.argv[5]
 open_get_weather = sys.argv[3]
 # 设置获取天气的地区（上面开启后必填）如：area = "宁波"
 area = sys.argv[4]
+
+today = datetime.date.today()
 
 set_push = [True]
 
@@ -200,7 +201,7 @@ def main(_user, _passwd, min_1, max_1):
 
     response = requests.post(url, data=data, headers=head).json()
     # print(response)
-    result = f"⏰[⏰{now}]\n\n账号：{user[:3]}****{user[7:]} 修改步数（{step}）\\[" + response['message'] + "]\n\n\n"
+    result = f"⏰[{now}]⏰\n\n🍋账号：{user[:3]}****{user[7:]} 修改步数（{step}）\\[" + response['message'] + "]"🍋
     # print(result)
     return result
 
@@ -230,7 +231,7 @@ def push_wx(desp=""):
     else:
         server_url = f"https://sc.ftqq.com/{sckey}.send"
         params = {
-            "text": '【✍小米运动步数修改✍】',
+            "text": print(today)'小米运动步数',
             "desp": desp
         }
 
