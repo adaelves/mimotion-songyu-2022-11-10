@@ -202,7 +202,7 @@ def main(_user, _passwd, min_1, max_1):
 
     response = requests.post(url, data=data, headers=head).json()
     # print(response)
-    result = f"⏰[{now}]⏰\n\n🍋账号：{user[:3]}****{user[7:]} 修改步数（{step}）\\[" + response['message'] + "]🍋\n\n\n\n\n\n\n\n"
+    result = f"\n\n账号：r[:3]}****{user[7:]}\n\n\n\n步数：（{step}）\n\n\n\n状态：[" + response['message'] + "]"\n\n\n\n\n\nf"⏰[{now}]⏰"
     # print(result)
     return result
 
