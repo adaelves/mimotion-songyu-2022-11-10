@@ -5,9 +5,9 @@
   <img src="https://img.shields.io/github/stars/matocool?style=social" height="25px" alt="github follow" /> </a>
 </p>
 
-# 小米运动自动刷步数<br><br>
-# 无法运行的先删除再重新FORK，并仔细查看说明文档<br><br>
-# Github Actions 部署指南<br><br>
+# 小米运动自动刷步数
+# 无法运行的先删除再重新FORK，并仔细查看说明文档
+# Github Actions 部署指南
 ### 一、Fork 此仓库
 
 ### 二、设置账号密码
