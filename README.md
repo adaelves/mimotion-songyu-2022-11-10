@@ -1,4 +1,3 @@
-# mimotion - 无法运行的请重新FORK
 </p>  
   <a href="https://github.com/matocool?tab=followers">
   <img src="https://img.shields.io/github/followers/matocool?label=Followers&style=plastic" height="25px" alt="github follow" /> </a>
@@ -8,9 +7,9 @@
 
 # 小米运动自动刷步数
 
-> 小米运动自动刷步数
+# 无法运行的先删除再重新FORK，并仔细查看说明文档
 
-## Github Actions 部署指南
+### Github Actions 部署指南
 
 ### 一、Fork 此仓库
 
