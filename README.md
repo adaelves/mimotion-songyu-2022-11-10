@@ -33,12 +33,14 @@
 
 **abc123qwe#abcqwe2** 变量 **PWD**
 
+### 最后，点击action，点击刷步数，点击 run workflow 即可运行
+
 ### 四、自定义启动时间
 
 编辑 **.github/workflows/run.yml**
 修改其中**cron**语句的判断时间为UTC时间，即**北京时间-8**，如北京时间8点为UTC时间0点，需要运行的时间-8就是UTC时间
 
-#### 点击action，点击刷步数，点击 run workflow 
+
 
 
 ## 五、感谢名单<br><br>https://github.com/huangshihai/mimotion<br>https://github.com/xunichanghuan/mimotion
