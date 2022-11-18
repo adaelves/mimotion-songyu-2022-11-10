@@ -4,8 +4,6 @@
   <a href="https://github.com/matocool/mimotion-repair-version/network">
   <img src="https://img.shields.io/github/stars/matocool?style=social" height="25px" alt="github follow" /> </a>
 </p>
-#
-<br>
 # 小米运动自动刷步数
 # 无法运行的先删除再重新FORK，并仔细查看说明文档
 # Github Actions 部署指南
