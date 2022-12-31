@@ -43,7 +43,7 @@
 
 
 
-## 五、感谢名单<br><br>https://github.com/huangshihai/mimotion<br>https://github.com/xunichanghuan/mimotion
+## 五、感谢名单<br><br><br><br>本项目基于以下项目修改，特此感谢<br><br>https://github.com/huangshihai/mimotion<br>https://github.com/xunichanghuan/mimotion
 
 
 
