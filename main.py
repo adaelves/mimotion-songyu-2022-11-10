@@ -6,13 +6,19 @@ import random
 import re
 import sys
 import time
-
 import requests
+
+# 推送server酱
+sckey = sys.argv[5]
 
 # 开启根据地区天气情况降低步数（默认关闭）
 open_get_weather = sys.argv[3]
 # 设置获取天气的地区（上面开启后必填）如：area = "宁波"
 area = sys.argv[4]
+
+
+
+set_push = [True]
 
 # 以下如果看不懂直接默认就行只需改上面
 
@@ -22,6 +28,7 @@ K_dict = {"多云": 0.9, "阴": 0.8, "小雨": 0.7, "中雨": 0.5, "大雨": 0.4
 # 北京时间
 time_bj = datetime.datetime.today() + datetime.timedelta(hours=8)
 now = time_bj.strftime("%Y-%m-%d %H:%M:%S")
+today = time_bj.strftime("%Y-%m-%d")
 headers = {'User-Agent': 'MiFit/5.3.0 (iPhone; iOS 14.7.1; Scale/3.00)'}
 
 
@@ -71,6 +78,7 @@ def getBeijinTime():
     r = requests.get(url=url, headers=hea)
     if r.status_code == 200:
         result = r.text
+        a = set_push
         pattern = re.compile('nhrs=(\\d+)')
         find = re.search(pattern, result)
         hour = find.group(1)
@@ -97,6 +105,10 @@ def getBeijinTime():
             for user_mi, passwd_mi in zip(user_list, passwd_list):
                 msg_mi += main(user_mi, passwd_mi, min_1, max_1)
                 # print(msg_mi)
+            if a:
+                push_wx(msg_mi)
+            else:
+               print("此次修改结果不推送")
     else:
         print("当前主人设置了0步数呢，本次不提交")
         return
@@ -190,7 +202,7 @@ def main(_user, _passwd, min_1, max_1):
 
     response = requests.post(url, data=data, headers=head).json()
     # print(response)
-    result = f"[{now}]\n账号：{user[:3]}****{user[7:]}\n修改步数（{step}）[" + response['message'] + "]\n"
+    result = f"时间：[{today}]\n\n\n\n账号：{user[:3]}****{user[7:]}\n\n\n\n步数：{step}\n\n\n\n状态：[" + response['message'] + "]\n\n______________________________\n\n"
     # print(result)
     return result
 
@@ -212,6 +224,23 @@ def get_app_token(login_token):
     # print(app_token)
     return app_token
 
+# 推送server
+def push_wx(desp=""):
+    if sckey == 'NO':
+        print(sckey == "NO")
+        return
+    else:
+        server_url = f"https://sc.ftqq.com/{sckey}.send"
+        params = {
+            "text": '🍋手机版运动步数修改🍋',
+            "desp": desp
+        }
+
+        response = requests.get(server_url, params=params).text
+        print(response)
+        
+def main_handler(event, context):
+    getBeijinTime()
 
 if __name__ == "__main__":
     getBeijinTime()
