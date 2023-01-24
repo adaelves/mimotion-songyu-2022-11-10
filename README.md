@@ -6,7 +6,11 @@
 </p>
 
 # 小米运动自动刷步数
+
 # 无法运行的先删除再重新FORK，并仔细查看说明文档
+
+# 部分人配置完毕之后并没有运行，需要先点击action，点击刷步数，点击 run workflow 即可运行
+
 # Github Actions 部署指南
 ### 一、Fork 此仓库
 
@@ -39,8 +43,6 @@
 
 编辑 **.github/workflows/run.yml**
 修改其中**cron**语句的判断时间为UTC时间，即**北京时间-8**，如北京时间8点为UTC时间0点，需要运行的时间-8就是UTC时间
-
-
 
 
 ## 五、感谢名单<br>本项目基于以下项目修改，特此感谢<br>https://github.com/huangshihai/mimotion<br>https://github.com/xunichanghuan/mimotion
