@@ -1,15 +1,7 @@
-</p>  
-  <a href="https://github.com/matocool?tab=followers">
-  <img src="https://img.shields.io/github/followers/matocool?label=Followers&style=plastic" height="25px" alt="github follow" /> </a>
-  <a href="https://github.com/matocool/mimotion-repair-version/network">
-  <img src="https://img.shields.io/github/stars/matocool?style=social" height="25px" alt="github follow" /> </a>
-</p>
 
 # 小米运动自动刷步数
 
 # 无法运行的先删除再重新FORK，并仔细查看说明文档
-
-
 
 # Github Actions 部署指南
 ### 一、Fork 此仓库
@@ -63,6 +55,13 @@
 **5. 小米运动不会更新步数，只有关联的会同步！！！！！**
 
 **6. 请注意，账号不是 [小米账号]，而是 [小米运动] 的账号。**
+
+</p>  
+  <a href="https://github.com/matocool?tab=followers">
+  <img src="https://img.shields.io/github/followers/matocool?label=Followers&style=plastic" height="25px" alt="github follow" /> </a>
+  <a href="https://github.com/matocool/mimotion-repair-version/network">
+  <img src="https://img.shields.io/github/stars/matocool?style=social" height="25px" alt="github follow" /> </a>
+</p>
 
 ## 历史Star数
 
