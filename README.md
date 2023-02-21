@@ -9,8 +9,8 @@
 
 # 无法运行的先删除再重新FORK，并仔细查看说明文档
 
-# 部分人配置完毕之后并没有运行，需要先点击action，点击刷步数，点击 run workflow 即可运行
-# 2023/02/16因为 zepp life 要求重新认证，去zepp life里面重新绑定支付宝微信即可。
+
+
 # Github Actions 部署指南
 ### 一、Fork 此仓库
 
@@ -37,7 +37,9 @@
 
 **abc123qwe#abcqwe2** 变量 **PWD**
 
-### 最后，点击action，点击刷步数，点击 run workflow 即可运行
+# 最后，点击action，点击刷步数，点击 run workflow 即可运行
+
+# 部分人配置完毕之后并没有运行，需要先点击action，点击刷步数，点击 run workflow 即可运行
 
 ### 四、自定义启动时间
 
